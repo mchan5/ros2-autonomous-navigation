@@ -5,19 +5,14 @@
 #include <string>
 #include <vector>
 
-// ROS 2 Core
 #include "rclcpp/rclcpp.hpp"
 
-// ROS 2 Message Types
 #include "nav_msgs/msg/occupancy_grid.hpp"
 #include "nav_msgs/msg/odometry.hpp"
 #include "nav_msgs/msg/path.hpp"
 #include "geometry_msgs/msg/point_stamped.hpp"
 #include "geometry_msgs/msg/pose_stamped.hpp"
 
-/**
- * @brief Structure representing a node in the A* search tree.
- */
 struct AStarNode {
     int x, y;
     double g_cost;  // Cost from start to current node
@@ -29,9 +24,6 @@ struct AStarNode {
         : x(x), y(y), g_cost(g), h_cost(h), f_cost(g + h), parent(p) {}
 };
 
-/**
- * @brief ROS 2 Node that subscribes to a map and odometry to plan a path to a goal point.
- */
 class PlannerNode : public rclcpp::Node {
 public:
     PlannerNode();

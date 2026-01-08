@@ -2,22 +2,22 @@
 #include "map_memory_node.hpp"
 
 MapMemoryNode::MapMemoryNode() : Node("map_memory") {
-  // 1. Initialize Subscribers
+  // Initialize Subscribers
   costmap_sub_ = this->create_subscription<nav_msgs::msg::OccupancyGrid>(
     "/costmap", 10, std::bind(&MapMemoryNode::costmapCallback, this, std::placeholders::_1));
 
   odom_sub_ = this->create_subscription<nav_msgs::msg::Odometry>(
     "/odom/filtered", 10, std::bind(&MapMemoryNode::odomCallback, this, std::placeholders::_1));
 
-  // 2. Initialize Publisher
+  // Initialize Publisher
   map_pub_ = this->create_publisher<nav_msgs::msg::OccupancyGrid>("/map", 10);
 
-  // 3. Initialize Timer (1.0 seconds)
+  // Initialize Timer (1.0 seconds)
   timer_ = this->create_wall_timer(
     std::chrono::milliseconds(1000), 
     std::bind(&MapMemoryNode::timerCallback, this));
 
-  // 4. Initialize the Global Map
+  // Initialize the Global Map
  
   global_map_.header.frame_id = "sim_world"; 
   global_map_.info.resolution = 0.1;
@@ -43,7 +43,6 @@ void MapMemoryNode::odomCallback(const nav_msgs::msg::Odometry::SharedPtr msg) {
 void MapMemoryNode::timerCallback() {
   if (!costmap_received_) return;
 
-  // Structure is: Odometry -> PoseWithCovariance (pose) -> Pose (pose) -> Point (position)
   double current_x = robot_odom_.pose.pose.position.x;
   double current_y = robot_odom_.pose.pose.position.y;
   
