@@ -20,7 +20,7 @@ PlannerNode::PlannerNode() : Node("planner") {
 
 
   timer_ = this->create_wall_timer(
-    std::chrono::milliseconds(500), 
+    std::chrono::milliseconds(5000), 
     std::bind(&PlannerNode::timerCallback, this));
 
   RCLCPP_INFO(this->get_logger(), "Planner Node has been initialized.");
