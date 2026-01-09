@@ -4,8 +4,6 @@
 ![Platform](https://img.shields.io/badge/Platform-Ubuntu%2024.04%20%7C%20WSL2-orange)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
-This repository uses ROS2 to autonomous navigate a simulated car. 
-
 
 # Process
 Control: 
