@@ -6,7 +6,6 @@
 
 This repository uses ROS2 to autonomous navigate a simulated car. 
 
-All logic, and integration with ROS2 was contributed by me. Members of the WATonomous team supplied the framework and initial integration with Foxglove.
 
 # Process
 Control: 
