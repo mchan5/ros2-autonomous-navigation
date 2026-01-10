@@ -2,7 +2,7 @@
 ![ROS 2](https://img.shields.io/badge/ROS2-Humble-22314E?logo=ros&logoColor=white)
 ![C++](https://img.shields.io/badge/Language-C++17-00599C?logo=c%2B%2B&logoColor=white)
 
-[![Video Thumbnail](img.youtube.com)](https://youtu.be/DU3C-3_tU9k)
+[![Watch the demo](./images/demo-thumbnail.png)](https://www.youtube.com/watch?v=DU3C-3_tU9k)
 # Process
 Control: 
 Subscribers: /path, /odom 
