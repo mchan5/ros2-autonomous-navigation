@@ -32,7 +32,7 @@ https://github.com/user-attachments/assets/6f316b25-a6cb-44a0-a53a-f0222cc9ac8e
 * **Publishers:** `/path`
 * **Function:** Implements the **A* (A-Star) algorithm** to find an efficient path to the goal point while considering obstacles.
 * **Logic:** It features a **"Lazy Check" loop** that continuously validates if the *current* path is safe as new Lidar data is provided, rather than replanning every single frame.
-* 
+
 
 # Acknowledgements
 The framework and setup for this project was done by the WATonomous design team. The integration and programming of the modules listed above were done by me.
