@@ -3,10 +3,7 @@
 ![C++](https://img.shields.io/badge/Language-C++17-00599C?logo=c%2B%2B&logoColor=white)
 
 
-
-https://github.com/user-attachments/assets/8cb59626-7cd2-4ec8-839b-0fcfa123cf45
-
-
+https://github.com/user-attachments/assets/6f316b25-a6cb-44a0-a53a-f0222cc9ac8e
 
 # Process
 Control: 
