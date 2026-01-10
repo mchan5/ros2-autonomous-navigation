@@ -2,7 +2,7 @@
 ![ROS 2](https://img.shields.io/badge/ROS2-Humble-22314E?logo=ros&logoColor=white)
 ![C++](https://img.shields.io/badge/Language-C++17-00599C?logo=c%2B%2B&logoColor=white)
 
-**An autonomous navigation system built in C++ and ROS 2, and simultaed in Foxglove.**
+**An autonomous navigation system built in C++ and ROS 2, and simulated in Foxglove.**
 
 https://github.com/user-attachments/assets/6f316b25-a6cb-44a0-a53a-f0222cc9ac8e
 
